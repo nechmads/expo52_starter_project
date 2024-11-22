@@ -1,0 +1,26 @@
+{
+  "cli": {
+    "version": ">= 12.6.1",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {
+      "autoIncrement": true,
+      "env": {
+        "EXPO_PUBLIC_API_BASE_URL": "https://yourcompanyname.ngrok.app",
+        "EXPO_PUBLIC_SUPABASE_URL": "https://xxx.supabase.co",
+        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "xxx"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
